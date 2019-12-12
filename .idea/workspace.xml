@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="EMsystem:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7f36a1f2-5b85-4329-b3f9-733e507abc21" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/com/emsys/toolbean/DbUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/emsys/toolbean/DbUtil.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="NBellic10010" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="EMsystem" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\works\EMsystem" />
+        <option value="D:\works\EMsystem\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1UBxUn1GkfCkPTy6KWMeh5xDXnp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="ignore.virus.scanning.warn.message" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\works\EMsystem\web" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.19" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.19" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment>
+        <artifact name="EMsystem:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/EMsystem_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_9_0_19_EMsystem" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="62833" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="EMsystem:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7f36a1f2-5b85-4329-b3f9-733e507abc21" name="Default Changelist" comment="" />
+      <created>1574843807429</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574843807429</updated>
+      <workItem from="1574843812239" duration="6203000" />
+      <workItem from="1575730591399" duration="5867000" />
+      <workItem from="1575905785509" duration="140000" />
+      <workItem from="1575965365367" duration="12879000" />
+      <workItem from="1576154064407" duration="1633000" />
+      <workItem from="1576155717616" duration="1030000" />
+      <workItem from="1576157121067" duration="607000" />
+    </task>
+    <task id="LOCAL-00001" summary="grsdfes">
+      <created>1576157236790</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576157236790</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="grsdfes" />
+    <option name="LAST_COMMIT_MESSAGE" value="grsdfes" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1576155325626">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1576155325626" />
+    <state x="449" y="138" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576154269047">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="138" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1576154269047" />
+    <state x="393" y="4" key="CommitChangelistDialog2" timestamp="1576157785228">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="393" y="4" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576157785228" />
+    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1576157805797">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1576157805797" />
+    <state x="603" y="325" width="354" height="174" key="Github.CreateGistDialog" timestamp="1576157872965">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="603" y="325" width="354" height="174" key="Github.CreateGistDialog/0.0.1536.824@0.0.1536.824" timestamp="1576157872965" />
+    <state x="550" y="278" key="Github.CreatePullRequestDialog" timestamp="1576157324172">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="550" y="278" key="Github.CreatePullRequestDialog/0.0.1536.824@0.0.1536.824" timestamp="1576157324172" />
+    <state x="647" y="302" width="258" height="219" key="Github.ShareDialog" timestamp="1576157381403">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="647" y="302" width="258" height="219" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1576157381403" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1576157124367">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1576157124367" />
+    <state x="599" y="203" key="svn.repositoryBrowser" timestamp="1576157283141">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="599" y="203" key="svn.repositoryBrowser/0.0.1536.824@0.0.1536.824" timestamp="1576157283141" />
+  </component>
+</project>
