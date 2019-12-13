@@ -61,7 +61,26 @@ public class DbUtil {
         return g;
     }
 
-    public boolean chaxun_jiuyuan(int gonghao, String mima) throws ClassNotFoundException, SQLException {
+    public jiuyuan chaxun_jiuyuan(int gonghao) throws ClassNotFoundException, SQLException {
+        Statement stmt = conn.createStatement();
+        String sql = "SELECT * FROM jiuyuan where gonghao=?";
+        //ResultSet rs = stmt.executeQuery("SELECT * FROM jiuyuan where name=?");
+        PreparedStatement ptmt = conn.prepareStatement(sql);
+        ptmt.setInt(1, gonghao);
+        ResultSet rs = ptmt.executeQuery();
+        jiuyuan g = null;
+        while (rs.next()) {
+            g = new jiuyuan();
+            g.setDanwei(rs.getInt("danwei"));
+            g.setDianhua(rs.getString("dianhua"));
+            g.setXingming(rs.getString("xingming"));
+            g.setIdnumber(rs.getString("idnumber"));
+            g.setGonghao(rs.getInt("gonghao"));
+        }
+        return g;
+    }
+
+    public jiuyuan chaxun_jiuyuan(int gonghao, String mima) throws ClassNotFoundException, SQLException {
         Statement stmt = conn.createStatement();
         String sql = "SELECT * FROM jiuyuan where gonghao=? and mima=?";
         //ResultSet rs = stmt.executeQuery("SELECT * FROM jiuyuan where name=?");
@@ -71,8 +90,17 @@ public class DbUtil {
 
         ResultSet rs = ptmt.executeQuery();
 
-        if(rs.next()) return true;
-        else return false;
+        jiuyuan g = null;
+        while (rs.next()) {
+            g = new jiuyuan();
+            g.setDanwei(rs.getInt("danwei"));
+            g.setDianhua(rs.getString("dianhua"));
+            g.setXingming(rs.getString("xingming"));
+            g.setIdnumber(rs.getString("idnumber"));
+            g.setGonghao(rs.getInt("gonghao"));
+
+        }
+        return g;
 
     }
 
@@ -86,13 +114,13 @@ public class DbUtil {
         gunali g = null;
         while (rs.next()) {
             g = new gunali();
-            g.setMima(rs.getInt("mima"));
+            g.setMima(rs.getString("mima"));
             g.setGonghao(rs.getInt("gonghao"));
         }
         return g;
     }
 
-    public boolean chaxun_guanli(int gonghao, String password) throws ClassNotFoundException, SQLException {
+    public gunali chaxun_guanli(int gonghao, String password) throws ClassNotFoundException, SQLException {
         Statement stmt = conn.createStatement();
         String sql = "SELECT * FROM guanli where gonghao=? and mima=?";
         //ResultSet rs = stmt.executeQuery("SELECT * FROM jiuyuan where name=?");
@@ -100,9 +128,13 @@ public class DbUtil {
         ptmt.setInt(1, gonghao);
         ptmt.setString(2, password);
         ResultSet rs = ptmt.executeQuery();
-
-        if(rs.next()) return true;
-        else return false;
+        gunali g = null;
+        while (rs.next()) {
+            g = new gunali();
+            g.setMima(rs.getString("mima"));
+            g.setGonghao(rs.getInt("gonghao"));
+        }
+        return g;
     }
 
     public void tianjia_jiuyuan(jiuyuan g) throws ClassNotFoundException, SQLException {
@@ -121,14 +153,31 @@ public class DbUtil {
     }
 
     public void shanchu_jiuyuan(int id) throws ClassNotFoundException, SQLException {
-        String sql = "delete from jiuyuan where id=?";
+        String sql = "delete from jiuyuan where gonghao=?";
         PreparedStatement ptmt = conn.prepareStatement(sql);
         ptmt.setInt(1, id);
         ptmt.execute();
     }
 
     public void xiugai_jiuyuan(jiuyuan g) throws  ClassNotFoundException, SQLException {
+        String sql = "UPDATE jiuyuan SET xingming = ?,mima = ?,danwei = ?,dianhua = ?  WHERE gonghao = ?";
+        PreparedStatement ptmt = conn.prepareStatement(sql);
+        ptmt.setString(1, g.getXingming());
+        ptmt.setString(2,g.getMima());
+        ptmt.setInt(3,g.getDanwei());
+        ptmt.setString(4,g.getDianhua());
+        ptmt.setInt(5,g.getGonghao());
 
+        ptmt.execute();
+    }
+
+    public void xiugai_guanli(String mima, int gonghao) throws  ClassNotFoundException, SQLException {
+        String sql = "UPDATE guanli SET mima=? WHERE gonghao=?";
+        PreparedStatement ptmt = conn.prepareStatement(sql);
+        ptmt.setString(1, mima);
+        ptmt.setInt(2, gonghao);
+
+        ptmt.execute();
     }
 
 

@@ -1,5 +1,7 @@
 package com.emsys.servlet;
 
+import com.emsys.pojo.gunali;
+import com.emsys.pojo.jiuyuan;
 import com.emsys.toolbean.DbUtil;
 
 import javax.servlet.ServletException;
@@ -12,7 +14,10 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
 
-@WebServlet("/login")
+@WebServlet(
+        name="loginserlvet",
+        urlPatterns="/loginservlet",
+        loadOnStartup=1 )
 public class loginservlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
@@ -30,33 +35,30 @@ public class loginservlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         DbUtil db = new DbUtil();
 
-        PrintWriter out = response.getWriter();
-        String title = "使用 POST 方法读取表单数据";
-        String name =new String(request.getParameter("name").getBytes("ISO8859-1"),"UTF-8");
         HttpSession s = request.getSession(false);
         assert s != null ? true : false;
         assert true;
         String gonghao = request.getParameter("gonghao");
         String mima = request.getParameter("mima");
-        if(s.getAttribute("shenfen") == "guanli") {
+        if(request.getParameter("optionsRadios") == "option1") {
             int gonghao_= Integer.parseInt(gonghao);
             try {
-                if(db.chaxun_guanli(Integer.valueOf(gonghao), mima)) {
-                    s.setAttribute("id_1", "valid");
-                    response.sendRedirect("success");
-                }
+                gunali g = db.chaxun_guanli(Integer.valueOf(gonghao), mima);
+                    s.setAttribute("id_1", g);
+                    response.sendRedirect("index_jiuyuan.jsp");
+
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-        }else if (s.getAttribute("shenfen") == "jiuyuan") {
+        }else if (request.getParameter("optionsRadios") == "option2") {
             int gonghao_= Integer.parseInt(gonghao);
             try {
-                if(db.chaxun_jiuyuan(Integer.valueOf(gonghao), mima)) {
-                    s.setAttribute("id_2", "valid");
-                    response.sendRedirect("index.jsp");
-                }
+                jiuyuan g = db.chaxun_jiuyuan(Integer.valueOf(gonghao), mima);
+                    s.setAttribute("id_2", g);
+                    response.sendRedirect("index_guanli.jsp");
+
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
             } catch (SQLException e) {

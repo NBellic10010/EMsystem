@@ -2,13 +2,13 @@ package com.emsys.pojo;
 
 public class gunali {
     private int gonghao;
-    private int mima;
+    private String mima;
 
     public int getGonghao() {
         return this.gonghao;
     }
 
-    public int getMima() {
+    public String getMima() {
         return this.mima;
     }
 
@@ -16,7 +16,7 @@ public class gunali {
         this.gonghao = gonghao;
     }
 
-    public void setMima(int mima) {
+    public void setMima(String mima) {
         this.mima = mima;
     }
 }

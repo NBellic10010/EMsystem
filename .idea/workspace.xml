@@ -6,8 +6,24 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f36a1f2-5b85-4329-b3f9-733e507abc21" name="Default Changelist" comment="">
+    <list default="true" id="7f36a1f2-5b85-4329-b3f9-733e507abc21" name="Default Changelist" comment="grsdfes">
+      <change afterPath="$PROJECT_DIR$/src/com/emsys/servlet/guanli_refactor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/index_guanli.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/navbar.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index_jiuyuan.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/start.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/emsys/pojo/gunali.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/emsys/pojo/gunali.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/emsys/pojo/jiuyuan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/emsys/pojo/jiuyuan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/emsys/servlet/guanli_servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/emsys/servlet/guanli_servlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/emsys/servlet/jiuyuan_dorefactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/emsys/servlet/jiuyuan_dorefactor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/emsys/servlet/jiuyuan_refactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/emsys/servlet/jiuyuan_refactor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/emsys/servlet/loginservlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/emsys/servlet/loginservlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/emsys/toolbean/DbUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/emsys/toolbean/DbUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login_guanli.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/login_guanli.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/start.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/start.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +85,9 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\works\EMsystem" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\works\EMsystem\web" />
     </key>
@@ -151,7 +170,17 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -174,7 +203,7 @@
       <workItem from="1575965365367" duration="12879000" />
       <workItem from="1576154064407" duration="1633000" />
       <workItem from="1576155717616" duration="1030000" />
-      <workItem from="1576157121067" duration="607000" />
+      <workItem from="1576157121067" duration="5187000" />
     </task>
     <task id="LOCAL-00001" summary="grsdfes">
       <created>1576157236790</created>
@@ -183,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576157236790</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="grsdfes">
+      <created>1576157903871</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576157903871</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,18 +230,30 @@
     <option name="LAST_COMMIT_MESSAGE" value="grsdfes" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="361" y="70" key="#Template_Data_Languages" timestamp="1576222472486">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="70" key="#Template_Data_Languages/0.0.1536.824@0.0.1536.824" timestamp="1576222472486" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576171274547">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1576171274547" />
     <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1576155325626">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1576155325626" />
+    <state x="360" y="70" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1576169696763">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="360" y="70" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1536.824@0.0.1536.824" timestamp="1576169696763" />
     <state x="449" y="138" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576154269047">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="138" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1576154269047" />
-    <state x="393" y="4" key="CommitChangelistDialog2" timestamp="1576157785228">
+    <state x="393" y="4" key="CommitChangelistDialog2" timestamp="1576222550742">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="4" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576157785228" />
+    <state x="393" y="4" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576222550742" />
     <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1576157805797">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -222,6 +270,58 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="647" y="302" width="258" height="219" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1576157381403" />
+    <state width="1023" height="210" key="GridCell.Tab.0.bottom" timestamp="1576222394981">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1023" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576222394981" />
+    <state width="1023" height="210" key="GridCell.Tab.0.center" timestamp="1576222394981">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1023" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1576222394981" />
+    <state width="1023" height="210" key="GridCell.Tab.0.left" timestamp="1576222394981">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1023" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1576222394981" />
+    <state width="1023" height="210" key="GridCell.Tab.0.right" timestamp="1576222394981">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1023" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1576222394981" />
+    <state width="1023" height="210" key="GridCell.Tab.1.bottom" timestamp="1576222394981">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1023" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576222394981" />
+    <state width="1023" height="210" key="GridCell.Tab.1.center" timestamp="1576222394981">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1023" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1576222394981" />
+    <state width="1023" height="210" key="GridCell.Tab.1.left" timestamp="1576222394981">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1023" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1576222394981" />
+    <state width="1023" height="210" key="GridCell.Tab.1.right" timestamp="1576222394981">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1023" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1576222394981" />
+    <state width="1023" height="210" key="GridCell.Tab.2.bottom" timestamp="1576222394981">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1023" height="210" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576222394981" />
+    <state width="1023" height="210" key="GridCell.Tab.2.center" timestamp="1576222394981">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1023" height="210" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1576222394981" />
+    <state width="1023" height="210" key="GridCell.Tab.2.left" timestamp="1576222394981">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1023" height="210" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1576222394981" />
+    <state width="1023" height="210" key="GridCell.Tab.2.right" timestamp="1576222394981">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1023" height="210" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1576222394981" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1576158261358">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1576158261358" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1576157124367">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
