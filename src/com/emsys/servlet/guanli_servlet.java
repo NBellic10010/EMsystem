@@ -20,14 +20,15 @@ public class guanli_servlet extends HttpServlet {
         DbUtil db = new DbUtil();
         try {
             List<jiuyuan> l = db.suoyou_jiuyuan();
-            req.setAttribute("List", l);
-            resp.sendRedirect("index_guanli.jsp");
+            req.setAttribute("list", l);
+            //System.out.println(l.get(0).getGonghao());
+            getServletConfig().getServletContext().getRequestDispatcher("/index_guanli.jsp").forward(req,resp);
+            //resp.sendRedirect("index_guanli.jsp");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
 
     }
 

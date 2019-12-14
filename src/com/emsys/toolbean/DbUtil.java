@@ -9,7 +9,7 @@ import java.util.List;
 public class DbUtil {
     public static final String URL = "jdbc:mysql://localhost:3306/emd";
     public static final String USER = "root";
-    public static final String PASSWORD = "123456";
+    public static final String PASSWORD = "";
     private Connection conn;
     {
         try {
@@ -18,14 +18,14 @@ public class DbUtil {
             e.printStackTrace();
         }
         try {
-            Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
+            this.conn = DriverManager.getConnection(URL, USER, PASSWORD);
         } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
     public List<jiuyuan> suoyou_jiuyuan() throws ClassNotFoundException, SQLException {
-        Statement stmt = conn.createStatement();
+        Statement stmt = this.conn.createStatement();
         ResultSet rs = stmt.executeQuery("SELECT * FROM jiuyuan");
         List<jiuyuan> res = new ArrayList<>();
         jiuyuan g = null;
@@ -36,17 +36,17 @@ public class DbUtil {
             g.setXingming(rs.getString("xingming"));
             g.setIdnumber(rs.getString("idnumber"));
             g.setGonghao(rs.getInt("gonghao"));
-
+            //System.out.println(rs.getInt("gonghao"));
             res.add(g);
         }
         return res;
     }
 
     public jiuyuan chaxun_jiuyuan(String name) throws ClassNotFoundException, SQLException {
-        Statement stmt = conn.createStatement();
+        Statement stmt = this.conn.createStatement();
         String sql = "SELECT * FROM jiuyuan where name=?";
         //ResultSet rs = stmt.executeQuery("SELECT * FROM jiuyuan where name=?");
-        PreparedStatement ptmt = conn.prepareStatement(sql);
+        PreparedStatement ptmt = this.conn.prepareStatement(sql);
         ptmt.setString(1, name);
         ResultSet rs = ptmt.executeQuery();
         jiuyuan g = null;
@@ -62,10 +62,10 @@ public class DbUtil {
     }
 
     public jiuyuan chaxun_jiuyuan(int gonghao) throws ClassNotFoundException, SQLException {
-        Statement stmt = conn.createStatement();
+        Statement stmt = this.conn.createStatement();
         String sql = "SELECT * FROM jiuyuan where gonghao=?";
         //ResultSet rs = stmt.executeQuery("SELECT * FROM jiuyuan where name=?");
-        PreparedStatement ptmt = conn.prepareStatement(sql);
+        PreparedStatement ptmt = this.conn.prepareStatement(sql);
         ptmt.setInt(1, gonghao);
         ResultSet rs = ptmt.executeQuery();
         jiuyuan g = null;
@@ -81,10 +81,10 @@ public class DbUtil {
     }
 
     public jiuyuan chaxun_jiuyuan(int gonghao, String mima) throws ClassNotFoundException, SQLException {
-        Statement stmt = conn.createStatement();
+        Statement stmt = this.conn.createStatement();
         String sql = "SELECT * FROM jiuyuan where gonghao=? and mima=?";
         //ResultSet rs = stmt.executeQuery("SELECT * FROM jiuyuan where name=?");
-        PreparedStatement ptmt = conn.prepareStatement(sql);
+        PreparedStatement ptmt = this.conn.prepareStatement(sql);
         ptmt.setInt(1, gonghao);
         ptmt.setString(2, mima);
 
@@ -105,10 +105,10 @@ public class DbUtil {
     }
 
     public gunali chaxun_guanli(String name) throws ClassNotFoundException, SQLException {
-        Statement stmt = conn.createStatement();
+        Statement stmt = this.conn.createStatement();
         String sql = "SELECT * FROM guanli where name=?";
         //ResultSet rs = stmt.executeQuery("SELECT * FROM jiuyuan where name=?");
-        PreparedStatement ptmt = conn.prepareStatement(sql);
+        PreparedStatement ptmt = this.conn.prepareStatement(sql);
         ptmt.setString(1, name);
         ResultSet rs = ptmt.executeQuery();
         gunali g = null;
@@ -121,7 +121,7 @@ public class DbUtil {
     }
 
     public gunali chaxun_guanli(int gonghao, String password) throws ClassNotFoundException, SQLException {
-        Statement stmt = conn.createStatement();
+        Statement stmt = this.conn.createStatement();
         String sql = "SELECT * FROM guanli where gonghao=? and mima=?";
         //ResultSet rs = stmt.executeQuery("SELECT * FROM jiuyuan where name=?");
         PreparedStatement ptmt = conn.prepareStatement(sql);
@@ -142,7 +142,7 @@ public class DbUtil {
         String sql = "INSERT INTO jiuyuan(gonghao, xingming, danwei, dianhua, idnumber)"+
                 "values("+"?,?,?,?,?)";
         //ResultSet rs = stmt.executeQuery("SELECT * FROM jiuyuan where name=?");
-        PreparedStatement ptmt = conn.prepareStatement(sql);
+        PreparedStatement ptmt = this.conn.prepareStatement(sql);
         ptmt.setInt(1, g.getGonghao());
         ptmt.setString(2, g.getXingming());
         ptmt.setInt(3, g.getDanwei());
@@ -154,14 +154,14 @@ public class DbUtil {
 
     public void shanchu_jiuyuan(int id) throws ClassNotFoundException, SQLException {
         String sql = "delete from jiuyuan where gonghao=?";
-        PreparedStatement ptmt = conn.prepareStatement(sql);
+        PreparedStatement ptmt = this.conn.prepareStatement(sql);
         ptmt.setInt(1, id);
         ptmt.execute();
     }
 
     public void xiugai_jiuyuan(jiuyuan g) throws  ClassNotFoundException, SQLException {
         String sql = "UPDATE jiuyuan SET xingming = ?,mima = ?,danwei = ?,dianhua = ?  WHERE gonghao = ?";
-        PreparedStatement ptmt = conn.prepareStatement(sql);
+        PreparedStatement ptmt = this.conn.prepareStatement(sql);
         ptmt.setString(1, g.getXingming());
         ptmt.setString(2,g.getMima());
         ptmt.setInt(3,g.getDanwei());
@@ -173,7 +173,7 @@ public class DbUtil {
 
     public void xiugai_guanli(String mima, int gonghao) throws  ClassNotFoundException, SQLException {
         String sql = "UPDATE guanli SET mima=? WHERE gonghao=?";
-        PreparedStatement ptmt = conn.prepareStatement(sql);
+        PreparedStatement ptmt = this.conn.prepareStatement(sql);
         ptmt.setString(1, mima);
         ptmt.setInt(2, gonghao);
 

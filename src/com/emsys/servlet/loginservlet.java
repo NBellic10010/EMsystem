@@ -35,29 +35,29 @@ public class loginservlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         DbUtil db = new DbUtil();
 
-        HttpSession s = request.getSession(false);
-        assert s != null ? true : false;
-        assert true;
+        HttpSession s = request.getSession();
+
         String gonghao = request.getParameter("gonghao");
         String mima = request.getParameter("mima");
-        if(request.getParameter("optionsRadios") == "option1") {
+        String option = request.getParameter("optionsRadios");
+        if(option.equals("option1")) {
             int gonghao_= Integer.parseInt(gonghao);
             try {
                 gunali g = db.chaxun_guanli(Integer.valueOf(gonghao), mima);
-                    s.setAttribute("id_1", g);
-                    response.sendRedirect("index_jiuyuan.jsp");
+                    //s.setAttribute("id_guanli", g);
+                    response.sendRedirect("guanli_servlet");
 
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-        }else if (request.getParameter("optionsRadios") == "option2") {
+        }else if (option.equals("option2")) {
             int gonghao_= Integer.parseInt(gonghao);
             try {
                 jiuyuan g = db.chaxun_jiuyuan(Integer.valueOf(gonghao), mima);
-                    s.setAttribute("id_2", g);
-                    response.sendRedirect("index_guanli.jsp");
+                s.setAttribute("id_jiuyuan", g);
+                response.sendRedirect("index_jiuyuan.jsp");
 
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();

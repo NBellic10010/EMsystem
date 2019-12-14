@@ -24,17 +24,17 @@
 </head>
 
 <body>
-<form class="form-horizontal" role="form" action="loginservlet">
+<form class="form-horizontal" role="form" action="loginservlet" method="GET">
     <div class="form-group">
         <label for="gonghao" class="col-sm-2 control-label">工号</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" id="gonghao" placeholder="请输入工号">
+            <input type="text" class="form-control" id="gonghao" name="gonghao" placeholder="请输入工号">
         </div>
     </div>
     <div class="form-group">
         <label for="mima" class="col-sm-2 control-label">姓</label>
         <div class="col-sm-10">
-            <input type="text" class="form-control" id="mima" placeholder="请输入密码">
+            <input type="text" class="form-control" id="mima" name="mima" placeholder="请输入密码">
         </div>
     </div>
     <div class="form-group">
@@ -53,12 +53,12 @@
     </div>
     <div class="radio-inline" >
         <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> 救援
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option2" checked> 救援
         </label>
     </div>
     <div class="radio-inline">
         <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> 管理员
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1"> 管理员
         </label>
     </div>
 </form>
