@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.List;
 
 @WebServlet(name="dispatcher_serlvet",
         urlPatterns="/dispatcher_servlet")
@@ -19,25 +20,22 @@ public class dispatcher_servlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession s = req.getSession();
         String message = null;
-        jiuyuan g = (jiuyuan)req.getAttribute("dispatch");
+        String id_S = req.getParameter("gonghao_value");
+        int id = Integer.parseInt(id_S);
         DbUtil db = new DbUtil();
         try {
-            jiuyuan g1 = db.chaxun_jiuyuan(g.getGonghao());
-            if(g1.getZhuangtai() == true) {
-                g1.setZhuangtai(false);
-                db.xiugai_jiuyuan(g1);
-                message = "success";
-            }else{
-                message = "Not available";
-            }
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
+            jiuyuan g1 = db.chaxun_jiuyuan(id);
+            g1.setZhuangtai(false);
+            db.xiugai_jiuyuan(g1);
+            message = "success";
+            req.setAttribute("message", message);
+
+        } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
 
-        req.setAttribute("message", message);
-        getServletConfig().getServletContext().getRequestDispatcher("/index_guanli.jsp").forward(req,resp);
+        getServletConfig().getServletContext().getRequestDispatcher("/guanli_servlet").forward(req,resp);
+
     }
 
     @Override

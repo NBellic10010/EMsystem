@@ -17,16 +17,15 @@ import java.util.List;
 public class guanli_servlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        HttpSession s = req.getSession();
         DbUtil db = new DbUtil();
         try {
             List<jiuyuan> l = db.suoyou_jiuyuan();
             req.setAttribute("list", l);
-            //System.out.println(l.get(0).getGonghao());
+
             getServletConfig().getServletContext().getRequestDispatcher("/index_guanli.jsp").forward(req,resp);
-            //resp.sendRedirect("index_guanli.jsp");
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
+
+        } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
         }
 

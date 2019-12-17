@@ -6,21 +6,99 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f36a1f2-5b85-4329-b3f9-733e507abc21" name="Default Changelist" comment="grsdfes">
-      <change afterPath="$PROJECT_DIR$/src/com/emsys/servlet/dispatcher_servlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/emsys/servlet/guanli_add_servlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.39-bin.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/top.jsp" afterDir="false" />
+    <list default="true" id="7f36a1f2-5b85-4329-b3f9-733e507abc21" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/WEB-INF/classes/META-INF/EMsystem.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/WEB-INF/classes/com/emsys/pojo/gunali.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/WEB-INF/classes/com/emsys/pojo/jiuyuan.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/WEB-INF/classes/com/emsys/servlet/dispatcher_servlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/WEB-INF/classes/com/emsys/servlet/guanli_add_servlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/WEB-INF/classes/com/emsys/servlet/guanli_refactor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/WEB-INF/classes/com/emsys/servlet/guanli_servlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/WEB-INF/classes/com/emsys/servlet/jiuyuan_dorefactor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/WEB-INF/classes/com/emsys/servlet/jiuyuan_refactor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/WEB-INF/classes/com/emsys/servlet/jiuyuan_update_servlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/WEB-INF/classes/com/emsys/servlet/loginservlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/WEB-INF/classes/com/emsys/servlet/recall_servlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/WEB-INF/classes/com/emsys/toolbean/DbUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.39-bin.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/WEB-INF/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/WEB-INF/test.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/image.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/index_guanli.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/index_jiuyuan.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/navbar.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/resources/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/resources/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/resources/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/resources/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/resources/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/resources/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/resources/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/resources/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/resources/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/resources/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/resources/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/resources/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/resources/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/resources/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/resources/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/resources/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/start.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/start_new.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/EMsystem_war_exploded/top.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/EMsystem/META-INF/EMsystem.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/EMsystem/com/emsys/pojo/gunali.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/EMsystem/com/emsys/pojo/jiuyuan.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/EMsystem/com/emsys/servlet/dispatcher_servlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/EMsystem/com/emsys/servlet/guanli_add_servlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/EMsystem/com/emsys/servlet/guanli_refactor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/EMsystem/com/emsys/servlet/guanli_servlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/EMsystem/com/emsys/servlet/jiuyuan_dorefactor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/EMsystem/com/emsys/servlet/jiuyuan_refactor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/EMsystem/com/emsys/servlet/jiuyuan_update_servlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/EMsystem/com/emsys/servlet/loginservlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/EMsystem/com/emsys/servlet/recall_servlet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/EMsystem/com/emsys/toolbean/DbUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/emsys/pojo/daiban.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/emsys/servlet/jiuyuan_insert_servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/emsys/servlet/jiuyuan_update_servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/emsys/servlet/recall_servlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/test.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/resources/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/signup.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/start_new.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EMsystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/EMsystem.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/emsys/servlet/guanli_refactor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/emsys/servlet/guanli_refactor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/emsys/servlet/dispatcher_servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/emsys/servlet/dispatcher_servlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/emsys/servlet/guanli_servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/emsys/servlet/guanli_servlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/emsys/servlet/loginservlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/emsys/servlet/loginservlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/emsys/toolbean/DbUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/emsys/toolbean/DbUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index_guanli.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index_guanli.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/index_jiuyuan.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index_jiuyuan.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/login_guanli.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/start.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/start.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/top.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/top.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +111,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Jsp File" />
         <option value="Class" />
       </list>
@@ -72,11 +151,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/apache-tomcat-9.0.19/apache-tomcat-9.0.19/lib/mysql-connector-java-5.1.39-bin.jar!/" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/montnets-sms-api-java-5.2/API DEMO V5.2.0.6" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -86,9 +166,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\works\EMsystem\web\WEB-INF" />
       <recent name="D:\works\EMsystem\web" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\works\EMsystem\web\resources" />
       <recent name="D:\works\EMsystem\web\WEB-INF\lib" />
       <recent name="D:\works\EMsystem" />
     </key>
@@ -108,6 +190,7 @@
       </method>
     </configuration>
     <configuration name="Tomcat 9.0.19" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.19" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <deployment>
         <artifact name="EMsystem:war exploded">
           <settings>
@@ -178,6 +261,10 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.db" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.19" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.db" />
@@ -223,7 +310,11 @@
       <workItem from="1576154064407" duration="1633000" />
       <workItem from="1576155717616" duration="1030000" />
       <workItem from="1576157121067" duration="15391000" />
-      <workItem from="1576306018567" duration="12269000" />
+      <workItem from="1576306018567" duration="25483000" />
+      <workItem from="1576428552626" duration="168000" />
+      <workItem from="1576428745893" duration="11000" />
+      <workItem from="1576428784126" duration="27914000" />
+      <workItem from="1576569383234" duration="14938000" />
     </task>
     <task id="LOCAL-00001" summary="grsdfes">
       <created>1576157236790</created>
@@ -246,7 +337,21 @@
       <option name="project" value="LOCAL" />
       <updated>1576222636886</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="grsdfes">
+      <created>1576328537838</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576328537838</updated>
+    </task>
+    <task id="LOCAL-00005" summary="grsdfes">
+      <created>1576328693753</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1576328693754</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,14 +362,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="grsdfes" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="361" y="70" key="#Template_Data_Languages" timestamp="1576222472486">
+    <state x="361" y="70" key="#SQL_Dialects" timestamp="1576587703510">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="70" key="#Template_Data_Languages/0.0.1536.824@0.0.1536.824" timestamp="1576222472486" />
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576171274547">
+    <state x="361" y="70" key="#SQL_Dialects/0.0.1536.824@0.0.1536.824" timestamp="1576587703510" />
+    <state x="361" y="70" key="#Template_Data_Languages" timestamp="1576564065869">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1576171274547" />
+    <state x="361" y="70" key="#Template_Data_Languages/0.0.1536.824@0.0.1536.824" timestamp="1576564065869" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576491330628">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1576491330628" />
     <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1576155325626">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -277,18 +386,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="599" y="123" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1536.824@0.0.1536.824" timestamp="1576312544735" />
-    <state x="449" y="138" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576154269047">
+    <state x="449" y="138" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1576586488693">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="138" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1576154269047" />
-    <state x="393" y="4" key="CommitChangelistDialog2" timestamp="1576328631170">
+    <state x="449" y="138" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1576586488693" />
+    <state x="393" y="4" key="CommitChangelistDialog2" timestamp="1576328692967">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="4" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576328631170" />
-    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1576312592111">
+    <state x="393" y="4" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576328692967" />
+    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1576493873730">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1576312592111" />
+    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1576493873730" />
     <state x="603" y="325" width="354" height="174" key="Github.CreateGistDialog" timestamp="1576157872965">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -301,54 +410,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="647" y="302" width="258" height="219" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1576157381403" />
-    <state width="1023" height="251" key="GridCell.Tab.0.bottom" timestamp="1576328478168">
+    <state width="1023" height="251" key="GridCell.Tab.0.bottom" timestamp="1576585897066">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1023" height="251" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576328478168" />
-    <state width="1023" height="251" key="GridCell.Tab.0.center" timestamp="1576328478168">
+    <state width="1023" height="251" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576585897066" />
+    <state width="1023" height="251" key="GridCell.Tab.0.center" timestamp="1576585897066">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1023" height="251" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1576328478168" />
-    <state width="1023" height="251" key="GridCell.Tab.0.left" timestamp="1576328478168">
+    <state width="1023" height="251" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1576585897066" />
+    <state width="1023" height="251" key="GridCell.Tab.0.left" timestamp="1576585897066">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1023" height="251" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1576328478168" />
-    <state width="1023" height="251" key="GridCell.Tab.0.right" timestamp="1576328478168">
+    <state width="1023" height="251" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1576585897066" />
+    <state width="1023" height="251" key="GridCell.Tab.0.right" timestamp="1576585897066">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1023" height="251" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1576328478168" />
-    <state width="1023" height="251" key="GridCell.Tab.1.bottom" timestamp="1576328478169">
+    <state width="1023" height="251" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1576585897066" />
+    <state width="1023" height="251" key="GridCell.Tab.1.bottom" timestamp="1576585897066">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1023" height="251" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576328478169" />
-    <state width="1023" height="251" key="GridCell.Tab.1.center" timestamp="1576328478168">
+    <state width="1023" height="251" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576585897066" />
+    <state width="1023" height="251" key="GridCell.Tab.1.center" timestamp="1576585897066">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1023" height="251" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1576328478168" />
-    <state width="1023" height="251" key="GridCell.Tab.1.left" timestamp="1576328478168">
+    <state width="1023" height="251" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1576585897066" />
+    <state width="1023" height="251" key="GridCell.Tab.1.left" timestamp="1576585897066">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1023" height="251" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1576328478168" />
-    <state width="1023" height="251" key="GridCell.Tab.1.right" timestamp="1576328478169">
+    <state width="1023" height="251" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1576585897066" />
+    <state width="1023" height="251" key="GridCell.Tab.1.right" timestamp="1576585897066">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1023" height="251" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1576328478169" />
-    <state width="1023" height="251" key="GridCell.Tab.2.bottom" timestamp="1576328478169">
+    <state width="1023" height="251" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1576585897066" />
+    <state width="1023" height="251" key="GridCell.Tab.2.bottom" timestamp="1576585897066">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1023" height="251" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576328478169" />
-    <state width="1023" height="251" key="GridCell.Tab.2.center" timestamp="1576328478169">
+    <state width="1023" height="251" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576585897066" />
+    <state width="1023" height="251" key="GridCell.Tab.2.center" timestamp="1576585897066">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1023" height="251" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1576328478169" />
-    <state width="1023" height="251" key="GridCell.Tab.2.left" timestamp="1576328478169">
+    <state width="1023" height="251" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1576585897066" />
+    <state width="1023" height="251" key="GridCell.Tab.2.left" timestamp="1576585897066">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1023" height="251" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1576328478169" />
-    <state width="1023" height="251" key="GridCell.Tab.2.right" timestamp="1576328478169">
+    <state width="1023" height="251" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1576585897066" />
+    <state width="1023" height="251" key="GridCell.Tab.2.right" timestamp="1576585897066">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1023" height="251" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1576328478169" />
+    <state width="1023" height="251" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1576585897066" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1576312618544">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -357,10 +466,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1576328660476" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1576157124367">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1576428784075">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1576157124367" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1576428784075" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1576578144003">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1576578144003" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1576561301502">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1576561301502" />
     <state x="599" y="203" key="svn.repositoryBrowser" timestamp="1576157283141">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

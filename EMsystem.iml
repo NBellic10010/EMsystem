@@ -29,5 +29,16 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="ie10-viewport-bug-workaround" level="application" />
+    <orderEntry type="library" name="html5shiv" level="application" />
+    <orderEntry type="library" name="respond" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="dashboard" level="application" />
+    <orderEntry type="library" name="holder" level="application" />
+    <orderEntry type="library" name="ie8-responsive-file-warning" level="application" />
+    <orderEntry type="library" name="ie-emulation-modes-warning" level="application" />
+    <orderEntry type="library" name="signin" level="application" />
+    <orderEntry type="library" name="offcanvas" level="application" />
   </component>
 </module>

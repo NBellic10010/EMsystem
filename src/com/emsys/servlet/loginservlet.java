@@ -44,7 +44,7 @@ public class loginservlet extends HttpServlet {
             int gonghao_= Integer.parseInt(gonghao);
             try {
                 gunali g = db.chaxun_guanli(Integer.valueOf(gonghao), mima);
-                    //s.setAttribute("id_guanli", g);
+                    s.setAttribute("id_guanli", g);
                     response.sendRedirect("guanli_servlet");
 
             } catch (ClassNotFoundException e) {

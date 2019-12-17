@@ -1,4 +1,5 @@
 package com.emsys.toolbean;
+import com.emsys.pojo.daiban;
 import com.emsys.pojo.gunali;
 import com.emsys.pojo.jiuyuan;
 
@@ -36,6 +37,7 @@ public class DbUtil {
             g.setXingming(rs.getString("xingming"));
             g.setIdnumber(rs.getString("idnumber"));
             g.setGonghao(rs.getInt("gonghao"));
+            g.setZhuangtai(rs.getBoolean("zhuangtai"));
             //System.out.println(rs.getInt("gonghao"));
             res.add(g);
         }
@@ -139,15 +141,14 @@ public class DbUtil {
 
     public void tianjia_jiuyuan(jiuyuan g) throws ClassNotFoundException, SQLException {
         //Statement stmt = conn.createStatement();
-        String sql = "INSERT INTO jiuyuan(gonghao, xingming, danwei, dianhua, idnumber)"+
-                "values("+"?,?,?,?,?)";
+        String sql = "INSERT INTO jiuyuan(xingming, danwei, dianhua, idnumber)"+
+                "values("+"?,?,?,?)";
         //ResultSet rs = stmt.executeQuery("SELECT * FROM jiuyuan where name=?");
         PreparedStatement ptmt = this.conn.prepareStatement(sql);
-        ptmt.setInt(1, g.getGonghao());
-        ptmt.setString(2, g.getXingming());
-        ptmt.setInt(3, g.getDanwei());
-        ptmt.setString(4, g.getDianhua());
-        ptmt.setString(5, g.getIdnumber());
+        ptmt.setString(1, g.getXingming());
+        ptmt.setInt(2, g.getDanwei());
+        ptmt.setString(3, g.getDianhua());
+        ptmt.setString(4, g.getIdnumber());
         ResultSet rs = ptmt.executeQuery();
         ptmt.execute();
     }
@@ -160,13 +161,14 @@ public class DbUtil {
     }
 
     public void xiugai_jiuyuan(jiuyuan g) throws  ClassNotFoundException, SQLException {
-        String sql = "UPDATE jiuyuan SET xingming = ?,mima = ?,danwei = ?,dianhua = ?  WHERE gonghao = ?";
+        String sql = "UPDATE jiuyuan SET xingming = ?,mima = ?,danwei = ?,dianhua = ?,zhuangtai = ?  WHERE gonghao = ?";
         PreparedStatement ptmt = this.conn.prepareStatement(sql);
         ptmt.setString(1, g.getXingming());
         ptmt.setString(2,g.getMima());
         ptmt.setInt(3,g.getDanwei());
         ptmt.setString(4,g.getDianhua());
-        ptmt.setInt(5,g.getGonghao());
+        ptmt.setBoolean(5, g.getZhuangtai());
+        ptmt.setInt(6,g.getGonghao());
 
         ptmt.execute();
     }
@@ -178,6 +180,31 @@ public class DbUtil {
         ptmt.setInt(2, gonghao);
 
         ptmt.execute();
+    }
+
+    public void tianjia_daiban(daiban d) throws  ClassNotFoundException, SQLException {
+        String sql = "INSERT INTO TABLE(jiuyuan_gonghao, neirong) daiban VALUES(?, ?)";
+        PreparedStatement ptmt = this.conn.prepareStatement(sql);
+        ptmt.setString(2, d.getNeirong());
+        ptmt.setInt(1, d.getJiuyuan_gonghao());
+
+        ptmt.execute();
+    }
+
+    public List<daiban> chazhao_daiban(int gonghao) throws ClassNotFoundException, SQLException {
+        String sql = "SELECT * IN daiban where jiuyuan_gonghao=?";
+        PreparedStatement ptmt = this.conn.prepareStatement(sql);
+        ptmt.setInt(1, gonghao);
+
+        ResultSet rs = ptmt.executeQuery();
+        List<daiban> result = new ArrayList<>();
+        while (rs.next()) {
+            daiban g = new daiban();
+            g.setJiuyuan_gonghao(gonghao);
+            g.setNeirong(rs.getString("neirong"));
+        }
+
+        return result;
     }
 
 
